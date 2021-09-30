@@ -1,70 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #7bdaf3;
+html, body{
+    margin: 0px;
+    padding: 0px;
+  }
+  .container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    flex-wrap: wrap;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding-top: 3rem;
-}
-
-.add {
-    background-color: #9ec862;
-    border-radius: 3px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-}
-
-.note {
-    background-color: #fff;
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    font-family: cursive;
+  }
+  .note{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    border-radius: 5px;
     margin: 20px;
-    height: 400px;
-    width: 400px;
-}
-
-.note .tools {
-    background-color: #9ec862;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem;
-}
-
-.note .tools button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 0.5rem;
-}
-
-.note .main {
-    background-color: #eee;
-    overflow: hidden;
-    height: 400px;
+  }
+  .note p{
+    letter-spacing: 3px;
+    top: 20%;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .note::before, .note::after{
+    content: "";
+    width: 40%;
+    height: 10px;
+    position: absolute;
+    bottom: 10px;
+    box-shadow: 0 8px 15px #696666;
+    z-index: -1;
+  }
+  .note::before{
+    left: 10px;
+  }
+  .note:after{
+    right: 10px;
+  }
+  .line{
     width: 100%;
-}
-
-.note textarea {
-    outline: none;
-    font-family: inherit;
-    font-size: 1.2rem;
-    border: none;
-    height: 400px;
-    width: 100%;
-}
-
-.note .hidden {
-    display: none;
-}
+    height: 25px;
+  }
+  .container div:nth-child(1){
+    background: #ffe739;
+  }
+  .container div:nth-child(1) .line{
+    background: linear-gradient(#ffe739, #ffc317);
+  }
+  .container div:nth-child(2) .line{
+    background: linear-gradient(#98f57a, #86dc6a);
+  }
+  .container div:nth-child(2){
+    background: #98f57a;
+  }
+  
